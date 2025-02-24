@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.recharts-responsive-container {
+  margin-left: -24px;
+}
+.areachart {
+  margin-left: -8px;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer {
+  height: 700px !important;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: scroll 15s linear infinite;
+}
+
+/* For the entire scrollbar */
+pre::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
+}
+
+/* Track (the background of the scrollbar) */
+pre::-webkit-scrollbar-track {
+  background: #2d3748; /* Match the background color of the container */
+  border-radius: 6px;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+pre::-webkit-scrollbar-thumb {
+  background: #4a5568; /* Color of the scrollbar handle */
+  border-radius: 6px;
+  border: 1px solid #2d3748; /* Match the track color */
+}
+
+/* Handle on hover */
+pre::-webkit-scrollbar-thumb:hover {
+  background: #718096; /* Lighter color on hover */
+}

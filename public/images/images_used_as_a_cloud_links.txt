@@ -1,0 +1,23 @@
+Image Usage Documentation
+
+This document serves to clarify the use of images in the project and explain the contents of the images folder.
+
+Image Hosting:
+All images used in this project have been uploaded to PostImages and are accessed through online links. These cloud-hosted images are referenced directly in the project files (HTML/CSS/JavaScript).
+
+Local Images:
+The images folder contains local copies of all images for reference purposes only. These images are not used directly in the deployed version of the project.
+
+Image Management:
+If any images are updated or added:
+Upload the updated image to PostImages.
+Replace the image link in the project with the new hosted URL.
+
+Image Folder Maintenance:
+Since local images are only for reference:
+This folder may be periodically cleaned or updated.
+Unused images can be safely deleted if verified as no longer relevant.
+
+Summary:
+Cloud-hosted images are used to ensure faster loading and easier image management.
+The images folder is a reference directory only, not linked to the project runtime.
