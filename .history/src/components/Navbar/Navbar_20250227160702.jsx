@@ -14,7 +14,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white shadow-md">
+        <nav className="bg-white ">
             {/* Desktop View */}
             <div className="container mx-auto p-[12px] md:py-4 md:px-[24px] flex justify-between items-center">
                 {/* Left Side - Logo and Navigation */}

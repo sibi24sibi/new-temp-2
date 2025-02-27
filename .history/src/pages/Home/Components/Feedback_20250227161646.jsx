@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import daiki from '../../../assets/daiki.png';
 import emma from '../../../assets/emma_wilason.png';
 import katrina from '../../../assets/katrina.png';
@@ -13,12 +13,7 @@ import gabrieal from '../../../assets/gabireal.png';
 import lucas from '../../../assets/lucas.png';
 import sipho from '../../../assets/sipho.png';
 import zanele from '../../../assets/zanele.png';
-import carla from '../../../assets/carla.png';
-import druv from '../../../assets/druv.png';
-import gita from '../../../assets/gita.png';
-import monisha from '../../../assets/monish.png'
-import nikhil from '../../../assets/nikhil.png';
-import rishi from '../../../assets/rishi.png';
+
 
 const testimonials = [
     {
@@ -150,76 +145,7 @@ Our productivity has increased significantly."`,
         image: lucas,
         social: "linkedin",
     },
-    {
-        id: 12,
-        text: `"We struggled with delays in report generation due to the
-complexity of our data. SmartCard AI has solved this by
-automating the entire process, making our insights
-available instantly."`,
-        name: "Nikhil Malhotra",
-        role: "Analytics Manager",
-        image: nikhil,
-        social: "linkedin",
-    },
-    {
-        id: 13,
-        text: `"This tool feels like having an extra BI analyst in the team.
-It’s fast, accurate, and smart enough to generate
-meaningful dashboards without constant supervision."`,
-
-
-        name: "Gita Raman",
-        role: "Analytics Manager",
-        image: gita,
-        social: "linkedin",
-    },
-    {
-        id: 14,
-        text: `"I don’t have to wait for my BI team to generate reports
-anymore. SmartCard AI provides real time insights that
-help me make informed business decisions on the spot."`,
-        name: "Monish Agarwal",
-        role: "CEO",
-        image: monisha,
-        social: "twitter",
-    },
-    {
-        id: 15,
-        text: `"As our data volume increased, our manual reporting
-process became unsustainable. SmartCard AI scaled with
-our needs, handling complex data effortlessly."`,
-        name: "Rishi Patel",
-        role: "Analytics Manager",
-        image: rishi,
-        social: "linkedin",
-    },
-    {
-        id: 16,
-        text: `"I’m not a data expert, but SmartCard AI makes analytics
-easy. The dashboards are clear, insightful, and require no
-technical expertise to understand."`,
-        name: "Druv Acharya",
-        role: "CEO",
-        image: druv,
-        social: "twitter",
-    },
-    {
-        id: 17,
-        text: `"Our BI team has been using SmartCard AI for years. The"
-        text: "user experience has been incredibly smooth and
-        the support team is always available for any queries."`,
-
-    }
 ];
-
-const getSocialIcon = (social) => {
-    if (social === "linkedin") {
-        return <FaLinkedin size={20} className="text-blue-600" />;
-    } else if (social === "twitter") {
-        return <FaTwitter size={20} className="text-blue-400" />;
-    }
-    return null; // No icon if social media is missing
-};
 
 const TestimonialCard = () => {
     const firstHalf = testimonials.slice(0, Math.ceil(testimonials.length / 2));
@@ -244,9 +170,9 @@ const TestimonialCard = () => {
                         </div>
                         {/* LinkedIn Logo */}
                         <div className="absolute bottom-4 right-4">
-                            <div className="absolute bottom-4 right-4">
-                                {getSocialIcon(data.social)}
-                            </div>
+                            {/* <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800"> */}
+                            <FaLinkedin size={20} className="text-blue-600" />
+                            {/* </a> */}
                         </div>
                     </div>
                 ))}
@@ -266,9 +192,9 @@ const TestimonialCard = () => {
                         </div>
                         {/* LinkedIn Logo */}
                         <div className="absolute bottom-4 right-4">
-                            <div className="absolute bottom-4 right-4">
-                                {getSocialIcon(data.social)}
-                            </div>
+                            {/* <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800"> */}
+                            <FaLinkedin size={20} className="text-blue-600" />
+                            {/* </a> */}
                         </div>
                     </div>
                 ))}

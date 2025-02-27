@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa";
 import daiki from '../../../assets/daiki.png';
 import emma from '../../../assets/emma_wilason.png';
 import katrina from '../../../assets/katrina.png';
@@ -216,7 +216,7 @@ const getSocialIcon = (social) => {
     if (social === "linkedin") {
         return <FaLinkedin size={20} className="text-blue-600" />;
     } else if (social === "twitter") {
-        return <FaTwitter size={20} className="text-blue-400" />;
+        return <FaXTwitter size={20} className="text-blue-400" />;
     }
     return null; // No icon if social media is missing
 };

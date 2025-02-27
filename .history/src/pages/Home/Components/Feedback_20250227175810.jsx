@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from "react-i";
 import daiki from '../../../assets/daiki.png';
 import emma from '../../../assets/emma_wilason.png';
 import katrina from '../../../assets/katrina.png';

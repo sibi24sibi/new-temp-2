@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import daiki from '../../../assets/daiki.png';
 import emma from '../../../assets/emma_wilason.png';
 import katrina from '../../../assets/katrina.png';
@@ -212,15 +212,6 @@ technical expertise to understand."`,
     }
 ];
 
-const getSocialIcon = (social) => {
-    if (social === "linkedin") {
-        return <FaLinkedin size={20} className="text-blue-600" />;
-    } else if (social === "twitter") {
-        return <FaTwitter size={20} className="text-blue-400" />;
-    }
-    return null; // No icon if social media is missing
-};
-
 const TestimonialCard = () => {
     const firstHalf = testimonials.slice(0, Math.ceil(testimonials.length / 2));
     const secondHalf = testimonials.slice(Math.ceil(testimonials.length / 2));
@@ -244,9 +235,9 @@ const TestimonialCard = () => {
                         </div>
                         {/* LinkedIn Logo */}
                         <div className="absolute bottom-4 right-4">
-                            <div className="absolute bottom-4 right-4">
-                                {getSocialIcon(data.social)}
-                            </div>
+                            {/* <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800"> */}
+                            <FaLinkedin size={20} className="text-blue-600" />
+                            {/* </a> */}
                         </div>
                     </div>
                 ))}
@@ -266,9 +257,9 @@ const TestimonialCard = () => {
                         </div>
                         {/* LinkedIn Logo */}
                         <div className="absolute bottom-4 right-4">
-                            <div className="absolute bottom-4 right-4">
-                                {getSocialIcon(data.social)}
-                            </div>
+                            {/* <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800"> */}
+                            <FaLinkedin size={20} className="text-blue-600" />
+                            {/* </a> */}
                         </div>
                     </div>
                 ))}
