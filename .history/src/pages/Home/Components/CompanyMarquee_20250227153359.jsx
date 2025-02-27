@@ -14,7 +14,7 @@ export const CompanyMarquee = () => {
 
     return (
         <div className="relative bg-white  py-4   rounded-lg  overflow-hidden">
-            <h2 className="text-3xl  font-bold text-center text-gray-800 my-10">
+            <h2 className="text-5xl  font-bold text-center text-gray-800 my-10">
                 Trusted by
             </h2>
 

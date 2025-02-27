@@ -159,7 +159,7 @@ const TestimonialCard = () => {
             "> our patreons</h3>
             <Marquee speed={50} gradient={false} direction="left">
                 {firstHalf.map((data) => (
-                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[400px] mx-4 shadow-md">
+                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[650px] mx-4 shadow-md">
                         <p className="text-gray-600 italic">{data.text}</p>
                         <div className="flex items-center mt-4">
                             <img src={data.image} alt={data.name} className="w-12 h-12 rounded-full object-cover" />
@@ -181,7 +181,7 @@ const TestimonialCard = () => {
             {/* Second Marquee - Right to Left */}
             <Marquee speed={50} gradient={false} direction="right">
                 {secondHalf.map((data) => (
-                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[400px] mx-4 shadow-md">
+                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[650px] mx-4 shadow-md">
                         <p className="text-gray-600 italic">{data.text}</p>
                         <div className="flex items-center mt-4">
                             <img src={data.image} alt={data.name} className="w-12 h-12 rounded-full object-cover" />

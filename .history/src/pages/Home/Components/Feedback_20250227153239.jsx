@@ -155,11 +155,13 @@ const TestimonialCard = () => {
         <div className="p-6 max-w-7xl mx-auto space-y-8">
             {/* First Marquee - Left to Right */}
 
-            <h3 className=" text-3xl font-bold text-center text-gray-800 my-10 uppercase 
+            <h3 className="
+            
+            text-3xl font-bold text-center text-gray-800 my-10 uppercase text-5xl
             "> our patreons</h3>
             <Marquee speed={50} gradient={false} direction="left">
                 {firstHalf.map((data) => (
-                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[400px] mx-4 shadow-md">
+                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[650px] mx-4 shadow-md">
                         <p className="text-gray-600 italic">{data.text}</p>
                         <div className="flex items-center mt-4">
                             <img src={data.image} alt={data.name} className="w-12 h-12 rounded-full object-cover" />
@@ -170,9 +172,9 @@ const TestimonialCard = () => {
                         </div>
                         {/* LinkedIn Logo */}
                         <div className="absolute bottom-4 right-4">
-                            {/* <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800"> */}
-                            <FaLinkedin size={20} className="text-blue-600" />
-                            {/* </a> */}
+                            <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                <FaLinkedin size={20} />
+                            </a>
                         </div>
                     </div>
                 ))}
@@ -181,7 +183,7 @@ const TestimonialCard = () => {
             {/* Second Marquee - Right to Left */}
             <Marquee speed={50} gradient={false} direction="right">
                 {secondHalf.map((data) => (
-                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[400px] mx-4 shadow-md">
+                    <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[650px] mx-4 shadow-md">
                         <p className="text-gray-600 italic">{data.text}</p>
                         <div className="flex items-center mt-4">
                             <img src={data.image} alt={data.name} className="w-12 h-12 rounded-full object-cover" />
@@ -193,7 +195,7 @@ const TestimonialCard = () => {
                         {/* LinkedIn Logo */}
                         <div className="absolute bottom-4 right-4">
                             {/* <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800"> */}
-                            <FaLinkedin size={20} className="text-blue-600" />
+                            <FaLinkedin size={20} />
                             {/* </a> */}
                         </div>
                     </div>
