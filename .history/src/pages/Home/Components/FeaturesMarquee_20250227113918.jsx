@@ -52,36 +52,6 @@ import OperatingProfitMarginIcon from "../../../assets/Operating_profit.png"
 ///////////////////////////////////////////////////////////////////////////////
 
 
-import KpiIcon from "../../../assets/speedometer.png"
-import swotIcon from "../../../assets/swot-analysis.png"
-import PestelIcon from "../../../assets/problem-solving.png"
-import PortersIcon from "../../../assets/porter.png"
-import scope from "../../../assets/scope.png"
-import report from "../../../assets/report.png"
-import marketFitIcon from "../../../assets/Marketing_analysis.png"
-import riskIcon from "../../../assets/bar-chart.png"
-import matrixIcon from "../../../assets/matrix.png"
-import industryIcon from '../../../assets/industry.png'
-import strategicIcon from '../../../assets/Strategic Group.png'
-import coreIcon from '../../../assets/core.png'
-import valuechainIcon from '../../../assets/value chain.png'
-
-///////////////////////////////////////////////////////////////////////
-
-import Predective from '../../../assets/predective.png'
-import quantitaviveAnlaysis from '../../../assets/Qualitative.png'
-import descriptive from '../../../assets/desprective.png'
-import inferential from '../../../assets/Inferentia.png'
-import comparative from '../../../assets/Comparative.png'
-import networkIcon from '../../../assets/Network.png'
-import bayesian from '../../../assets/Bayesian.png'
-import corealtionalIcon from '../../../assets/Corelational.png'
-import experimental from '../../../assets/Experimenta.png'
-import longitudeIcon from '../../../assets/Meta.png'
-import spatialIcon from '../../../assets/Spatial.png'
-import causalIcon from '../../../assets/Causal.png'
-import clusterIcon from '../../../assets/cluster.png'
-
 import { FaFilePdf, FaFileAlt, FaFileCsv, FaFileImage, FaFileVideo, FaFileInvoice, FaFileExcel } from "react-icons/fa";
 import { BiAnalyse } from "react-icons/bi";
 import { AiFillInsurance, AiOutlineFileText } from 'react-icons/ai';
@@ -162,73 +132,6 @@ const statsData = [
         ]
     },
     {
-        id: "Strategic Analysis",
-        title: "450+",
-        subtitle: "Strategic Analysis",
-        highlight: "+5 apps/week",
-        icons: [
-            {
-                id: 1, name: "KPI Analysis", icon: KpiIcon
-            },
-            {
-                id: 1, name: "SWOT Analysis", icon: swotIcon
-            },
-            {
-                id: 1, name: "PESTLE Analysis", icon: PestelIcon
-            },
-            {
-                id: 1, name: "Porters Analysis", icon: PortersIcon
-            },
-            {
-                id: 1, name: "Scope Analysis", icon: scopeIcon
-            },
-            {
-                id: 1, name: "GE Matrix Analysis", icon: matrixIcon
-            },
-            {
-                id: 1, name: "Report Analysis", icon: report
-            },
-            {
-                id: 1, name: "Market Fit Analysis", icon: marketFitIcon
-            },
-            {
-                id: 1, name: "Data Analysis", icon: DataAnalysisIcon
-            },
-            {
-                id: 1, name: "Risk Analysis", icon: riskIcon
-            },
-
-            {
-                id: 1, name: "BCG Matrix Analysis", icon: matrixIcon
-            },
-
-            {
-                id: 1, name: "Industry Analysis ", icon: industryIcon
-            },
-
-            {
-                id: 1, name: "Strategic Group Analysis", icon: strategicIcon
-            },
-
-            {
-                id: 1, name: "Cost Benefit Analysis", icon: CostBenefitIcon
-            },
-
-            {
-                id: 1, name: "Risk Analysis", icon: riskIcon
-            },
-
-            {
-                id: 1, name: "Core Competence Analysis", icon: coreIcon
-            },
-            {
-                id: 1, name: "Value Chain Analysis", icon: valuechainIcon
-            },
-
-
-        ]
-    },
-    {
         id: "Financial Analysis",
         title: "450+",
         subtitle: "Financial Analysis",
@@ -284,57 +187,7 @@ const statsData = [
             }
         ]
     },
-    {
-        id: "R&D Analysis",
-        title: "450+",
-        subtitle: "R&D Analysis",
-        highlight: "+5 apps/week",
-        icons: [
-            {
-                id: 1, name: "Predictive Analysis", icon: Predective
-            },
-            {
-                id: 1, name: "QuantitativeAnalysis", icon: quantitaviveAnlaysis
-            },
 
-            {
-                id: 1, name: "Descriptive Analysis", icon: descriptive
-            },
-            {
-                id: 1, name: "Inferential Analysis", icon: inferential
-            },
-            {
-                id: 1, name: "Comparative Analysis", icon: comparative
-            },
-            {
-                id: 1, name: "Network Analysis", icon: networkIcon
-            },
-            {
-                id: 1, name: " Bayesian Analysis", icon: bayesian
-            },
-            {
-                id: 1, name: "Corelational Analysis", icon: corealtionalIcon
-            },
-            {
-                id: 1, name: "Experimental Analysis", icon: experimental
-            },
-            {
-                id: 1, name: "Longitudinal  Analysis", icon: longitudeIcon
-            },
-            {
-                id: 1, name: "meta Analysis", icon: report
-            },
-            {
-                id: 1, name: "Spatial Analysis", icon: spatialIcon
-            },
-            {
-                id: 1, name: "Causal Analysis", icon: causalIcon
-            },
-            {
-                id: 1, name: "Cluster Analysis", icon: clusterIcon
-            },
-        ]
-    }
 ]
 
 

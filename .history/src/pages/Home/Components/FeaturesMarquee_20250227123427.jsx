@@ -70,8 +70,8 @@ import valuechainIcon from '../../../assets/value chain.png'
 
 import Predective from '../../../assets/predective.png'
 import quantitaviveAnlaysis from '../../../assets/Qualitative.png'
-import descriptive from '../../../assets/desprective.png'
-import inferential from '../../../assets/Inferentia.png'
+import descriptive from '../../../assets/Descriptive.png'
+import inferential from '../../../assets/Inferential.png'
 import comparative from '../../../assets/Comparative.png'
 import networkIcon from '../../../assets/Network.png'
 import bayesian from '../../../assets/Bayesian.png'
@@ -87,6 +87,7 @@ import { BiAnalyse } from "react-icons/bi";
 import { AiFillInsurance, AiOutlineFileText } from 'react-icons/ai';
 import { SiJson, SiXml } from 'react-icons/si';
 import { List } from "lucide-react";
+import DataAnalysisIcon from '../../../assets/data_analyst.png';
 
 
 const statsData = [

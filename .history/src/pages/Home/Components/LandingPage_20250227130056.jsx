@@ -124,7 +124,7 @@ const LandingPage = () => {
 
             <div className="absolute top-72 left-60 md:block hidden text-center">
                 <img src={pointer2} alt="pointer2" className="w-10 mx-auto transform scale-x-[-1] " />
-                <div className="bg-green-800 text-white translate-x-8 translate-y-3 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
+                <div className="bg-green-800 text-white translate-x-16 translate-y-3 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
                     Power BI Developer
                 </div>
             </div>

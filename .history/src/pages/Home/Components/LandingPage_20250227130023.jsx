@@ -116,14 +116,14 @@ const LandingPage = () => {
             </div>
 
             <div className="absolute top-36 left-64  md:block hidden text-center">
-                <img src={pointer1} alt="pointer1" className="w-10 mx-auto transform scale-x-[-1]" />
+                <img src={pointer1} alt="pointer1" className="w-10 mx-auto" />
                 <div className="bg-teal-400 text-white translate-x-12 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
                     CEO
                 </div>
             </div>
 
-            <div className="absolute top-72 left-60 md:block hidden text-center">
-                <img src={pointer2} alt="pointer2" className="w-10 mx-auto transform scale-x-[-1] " />
+            <div className="absolute top-72 left-60 transform scale-x-[-1] md:block hidden text-center">
+                <img src={pointer2} alt="pointer2" className="w-10 mx-auto" />
                 <div className="bg-green-800 text-white translate-x-8 translate-y-3 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
                     Power BI Developer
                 </div>

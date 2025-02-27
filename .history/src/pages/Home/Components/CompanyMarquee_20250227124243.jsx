@@ -13,13 +13,13 @@ export const CompanyMarquee = () => {
     const companyImages = [img25, img26, img27, img28, img29, img30, img31, img32];
 
     return (
-        <div className="relative  py-4   rounded-lg  overflow-hidden">
+        <div className="relative bg-gray-50 py-4  w-3/6 rounded-lg shadow-md overflow-hidden">
             <h2 className="text-5xl font-bold text-center text-gray-800 my-10">
                 Trusted by
             </h2>
 
             {/* Wrapper for fading effect */}
-            <div className="relative w-5/6 flex items-center justify-center mx-auto">
+            <div className="relative">
                 {/* Left fade effect */}
                 <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-50 via-gray-50 to-transparent z-10"></div>
 

@@ -157,7 +157,7 @@ const TestimonialCard = () => {
 
             <h3 className="
             
-            text-3xl font-bold text-center text-gray-800 my-10 uppercase text-5xl
+            text-3xl font-bold text-center text-gray-800 my-10
             "> our patreons</h3>
             <Marquee speed={50} gradient={false} direction="left">
                 {firstHalf.map((data) => (

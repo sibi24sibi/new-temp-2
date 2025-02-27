@@ -52,36 +52,6 @@ import OperatingProfitMarginIcon from "../../../assets/Operating_profit.png"
 ///////////////////////////////////////////////////////////////////////////////
 
 
-import KpiIcon from "../../../assets/speedometer.png"
-import swotIcon from "../../../assets/swot-analysis.png"
-import PestelIcon from "../../../assets/problem-solving.png"
-import PortersIcon from "../../../assets/porter.png"
-import scope from "../../../assets/scope.png"
-import report from "../../../assets/report.png"
-import marketFitIcon from "../../../assets/Marketing_analysis.png"
-import riskIcon from "../../../assets/bar-chart.png"
-import matrixIcon from "../../../assets/matrix.png"
-import industryIcon from '../../../assets/industry.png'
-import strategicIcon from '../../../assets/Strategic Group.png'
-import coreIcon from '../../../assets/core.png'
-import valuechainIcon from '../../../assets/value chain.png'
-
-///////////////////////////////////////////////////////////////////////
-
-import Predective from '../../../assets/predective.png'
-import quantitaviveAnlaysis from '../../../assets/Qualitative.png'
-import descriptive from '../../../assets/desprective.png'
-import inferential from '../../../assets/Inferentia.png'
-import comparative from '../../../assets/Comparative.png'
-import networkIcon from '../../../assets/Network.png'
-import bayesian from '../../../assets/Bayesian.png'
-import corealtionalIcon from '../../../assets/Corelational.png'
-import experimental from '../../../assets/Experimenta.png'
-import longitudeIcon from '../../../assets/Meta.png'
-import spatialIcon from '../../../assets/Spatial.png'
-import causalIcon from '../../../assets/Causal.png'
-import clusterIcon from '../../../assets/cluster.png'
-
 import { FaFilePdf, FaFileAlt, FaFileCsv, FaFileImage, FaFileVideo, FaFileInvoice, FaFileExcel } from "react-icons/fa";
 import { BiAnalyse } from "react-icons/bi";
 import { AiFillInsurance, AiOutlineFileText } from 'react-icons/ai';
@@ -149,7 +119,7 @@ const statsData = [
             { id: 3, name: "Churn Analaysis", icon: chartIcon },
             { id: 4, name: "Customer Analaysis", icon: pieChartIcon },
             { id: 5, name: "Sentiment Analaysis", icon: emoji },
-            { id: 6, name: "Survey Analaysis", icon: feedbackIcon },
+            { id: 6, name: "Survey Analaysis", icon: survey },
             { id: 7, name: "Form Analaysis", icon: List },
             { id: 8, name: "Compare Analaysis", icon: compare },
             { id: 9, name: "Data Analysis Analaysis", icon: DataAnalysisIcon },
@@ -159,73 +129,6 @@ const statsData = [
             { id: 13, name: "Content Analysis", icon: contentIcon },
             { id: 14, name: "Marketing Strategy Analysis", icon: marketingIcon },
             { id: 15, name: "Sales performance Analysis", icon: salesIcon },
-        ]
-    },
-    {
-        id: "Strategic Analysis",
-        title: "450+",
-        subtitle: "Strategic Analysis",
-        highlight: "+5 apps/week",
-        icons: [
-            {
-                id: 1, name: "KPI Analysis", icon: KpiIcon
-            },
-            {
-                id: 1, name: "SWOT Analysis", icon: swotIcon
-            },
-            {
-                id: 1, name: "PESTLE Analysis", icon: PestelIcon
-            },
-            {
-                id: 1, name: "Porters Analysis", icon: PortersIcon
-            },
-            {
-                id: 1, name: "Scope Analysis", icon: scopeIcon
-            },
-            {
-                id: 1, name: "GE Matrix Analysis", icon: matrixIcon
-            },
-            {
-                id: 1, name: "Report Analysis", icon: report
-            },
-            {
-                id: 1, name: "Market Fit Analysis", icon: marketFitIcon
-            },
-            {
-                id: 1, name: "Data Analysis", icon: DataAnalysisIcon
-            },
-            {
-                id: 1, name: "Risk Analysis", icon: riskIcon
-            },
-
-            {
-                id: 1, name: "BCG Matrix Analysis", icon: matrixIcon
-            },
-
-            {
-                id: 1, name: "Industry Analysis ", icon: industryIcon
-            },
-
-            {
-                id: 1, name: "Strategic Group Analysis", icon: strategicIcon
-            },
-
-            {
-                id: 1, name: "Cost Benefit Analysis", icon: CostBenefitIcon
-            },
-
-            {
-                id: 1, name: "Risk Analysis", icon: riskIcon
-            },
-
-            {
-                id: 1, name: "Core Competence Analysis", icon: coreIcon
-            },
-            {
-                id: 1, name: "Value Chain Analysis", icon: valuechainIcon
-            },
-
-
         ]
     },
     {
@@ -284,57 +187,7 @@ const statsData = [
             }
         ]
     },
-    {
-        id: "R&D Analysis",
-        title: "450+",
-        subtitle: "R&D Analysis",
-        highlight: "+5 apps/week",
-        icons: [
-            {
-                id: 1, name: "Predictive Analysis", icon: Predective
-            },
-            {
-                id: 1, name: "QuantitativeAnalysis", icon: quantitaviveAnlaysis
-            },
 
-            {
-                id: 1, name: "Descriptive Analysis", icon: descriptive
-            },
-            {
-                id: 1, name: "Inferential Analysis", icon: inferential
-            },
-            {
-                id: 1, name: "Comparative Analysis", icon: comparative
-            },
-            {
-                id: 1, name: "Network Analysis", icon: networkIcon
-            },
-            {
-                id: 1, name: " Bayesian Analysis", icon: bayesian
-            },
-            {
-                id: 1, name: "Corelational Analysis", icon: corealtionalIcon
-            },
-            {
-                id: 1, name: "Experimental Analysis", icon: experimental
-            },
-            {
-                id: 1, name: "Longitudinal  Analysis", icon: longitudeIcon
-            },
-            {
-                id: 1, name: "meta Analysis", icon: report
-            },
-            {
-                id: 1, name: "Spatial Analysis", icon: spatialIcon
-            },
-            {
-                id: 1, name: "Causal Analysis", icon: causalIcon
-            },
-            {
-                id: 1, name: "Cluster Analysis", icon: clusterIcon
-            },
-        ]
-    }
 ]
 
 
@@ -367,7 +220,7 @@ const StatsSection = () => {
                         const thirdSlice = stat.icons.slice(chunkSize * 2);
 
                         return (
-                            <div key={stat.id} className="bg-white rounded-xl p-6 shadow-lg flex flex-col gap-4 min-w-96">
+                            <div key={stat.id} className="bg-white rounded-xl p-6 shadow-lg flex flex-col gap-4">
                                 {/* Marquee Effect with Slices */}
                                 <div className="relative flex justify-center overflow-hidden h-48 bg-gray-100 rounded-md p-4">
                                     {/* First slice */}
