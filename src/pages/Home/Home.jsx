@@ -16,8 +16,8 @@ function Home() {
     return (
         <>
             <LandingPage />
-            <Second />
             <CompanyMarquee />
+            <Second />
             <Third />
             <Fourth />
             <StatsSection />

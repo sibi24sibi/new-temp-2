@@ -21,14 +21,14 @@ import QAIcon from "../../../assets/help (1).png"
 import FAQIcon from "../../../assets/help.png"
 import chartIcon from "../../../assets/bar-chart.png"
 import pieChartIcon from "../../../assets/pie-chart.png"
-import emoji from "../../../assets/happy.png"
+import emoji from "../../../assets/emoji.png"
 import survey from "../../../assets/list.png"
 import compare from "../../../assets/compare.png"
 import DataAnalysisIcon from "../../../assets/data_analyst.png"
 import selectionIcon from '../../../assets/selection_analysis.png'
 import feedbackIcon from "../../../assets/feedback_analysis.png"
 import productIcon from "../../../assets/product.png"
-import contentIcon from "../../../assets/2503667.png"
+import contentIcon from "../../../assets/content_analysis.png"
 import marketingIcon from "../../../assets/Marketing_analysis.png"
 import salesIcon from "../../../assets/Sales.png"
 
@@ -95,7 +95,7 @@ const statsData = [
         highlight: "+5 apps/week",
         icons: [
             {
-                id: 1, name: "Q&A Analysis", icon: QAIcon
+                id: 1, name: "Q&A Analysis", icon: needIcon
             },
             { id: 2, name: "FAQ Analaysis", icon: FAQIcon },
             { id: 3, name: "Churn Analaysis", icon: chartIcon },

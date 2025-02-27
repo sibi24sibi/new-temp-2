@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Calendar, ChevronDown, MoveLeft, MoveRight } from 'lucide-react';
 import Lottie from "lottie-react";
-import pointerSvgImage from '../../../assets/sPNEAzSgPk.json'
-import pointer1 from '../../../assets/Animation - 1740401846216.gif'
-import pointer2 from '../../../assets/Animation - 1740401846216 (1).gif'
-import pointer3 from '../../../assets/Animation - 1740401846216 (2).gif'
+import pointerSvgImage from '../../../assests/sPNEAzSgPk.json'
+import pointer1 from '../../../assests/Animation - 1740401846216.gif'
+import pointer2 from '../../../assests/Animation - 1740401846216 (1).gif'
+import pointer3 from '../../../assests/Animation - 1740401846216 (2).gif'
 
 const salesData = [
     { Year: '2018', current: 35, previous: 45 },

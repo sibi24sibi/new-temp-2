@@ -17,20 +17,20 @@ import rfiIcon from "../../../assets/search.png";
 import rfqIcon from "../../../assets/rfq.png";
 import "../../../App.css";
 /////////////////////////////////////////////////////////////
+import chartIcon from "../../../assets/bar-chart.png"
 import QAIcon from "../../../assets/help (1).png"
 import FAQIcon from "../../../assets/help.png"
-import chartIcon from "../../../assets/bar-chart.png"
 import pieChartIcon from "../../../assets/pie-chart.png"
-import emoji from "../../../assets/happy.png"
-import survey from "../../../assets/list.png"
-import compare from "../../../assets/compare.png"
-import DataAnalysisIcon from "../../../assets/data_analyst.png"
-import selectionIcon from '../../../assets/selection_analysis.png'
-import feedbackIcon from "../../../assets/feedback_analysis.png"
-import productIcon from "../../../assets/product.png"
-import contentIcon from "../../../assets/2503667.png"
-import marketingIcon from "../../../assets/Marketing_analysis.png"
-import salesIcon from "../../../assets/Sales.png"
+import selectionIcon from '@/assets/selection_analysis.png'
+import emoji from "@/assets/emoji.png"
+import survey from "@/assets/list.png"
+import compare from "@/assets/compare.png"
+import DataAnalysisIcon from "@/assets/data_analyst.png"
+import feedbackIcon from "@/assets/feedback_analysis.png"
+import productIcon from "@/assets/product.png"
+import contentIcon from "@/assets/content_analysis.png"
+import marketingIcon from "@/assets/Marketing_analysis.png"
+import salesIcon from "@/assets/Sales.png"
 
 
 /////////////////////////////////////////////////////////////
@@ -38,7 +38,6 @@ import { FaFilePdf, FaFileAlt, FaFileCsv, FaFileImage, FaFileVideo, FaFileInvoic
 import { BiAnalyse } from "react-icons/bi";
 import { AiOutlineFileText } from 'react-icons/ai';
 import { SiJson, SiXml } from 'react-icons/si';
-import { List } from "lucide-react";
 
 
 const statsData = [
@@ -95,22 +94,22 @@ const statsData = [
         highlight: "+5 apps/week",
         icons: [
             {
-                id: 1, name: "Q&A Analysis", icon: QAIcon
+                id: 1, name: "Q&A Analysis", icon: needIcon
             },
             { id: 2, name: "FAQ Analaysis", icon: FAQIcon },
-            { id: 3, name: "Churn Analaysis", icon: chartIcon },
-            { id: 4, name: "Customer Analaysis", icon: pieChartIcon },
-            { id: 5, name: "Sentiment Analaysis", icon: emoji },
-            { id: 6, name: "Survey Analaysis", icon: survey },
-            { id: 7, name: "Form Analaysis", icon: List },
-            { id: 8, name: "Compare Analaysis", icon: compare },
-            { id: 9, name: "Data Analysis Analaysis", icon: DataAnalysisIcon },
-            { id: 10, name: "Selection Analysis", icon: selectionIcon },
-            { id: 11, name: "Feedback Analysis", icon: feedbackIcon },
-            { id: 12, name: "Product Analysis", icon: productIcon },
-            { id: 13, name: "Content Analysis", icon: contentIcon },
-            { id: 14, name: "Marketing Strategy Analysis", icon: marketingIcon },
-            { id: 15, name: "Sales performance Analysis", icon: salesIcon },
+            { id: 3, name: "Churn Analaysis", icon: Cha },
+            { id: 4, name: "Customer Analaysis", icon: opportunityIcon },
+            { id: 5, name: "Sentiment Analaysis", icon: rfqIcon },
+            { id: 6, name: "Survey Analaysis", icon: rfpIcon },
+            { id: 7, name: "Form Analaysis", icon: rfiIcon },
+            { id: 8, name: "Compare Analaysis", icon: infoIcon },
+            { id: 9, name: "Data Analysis Analaysis", icon: needIcon },
+            { id: 10, name: "Selection Analysis", icon: challageIcon },
+            { id: 11, name: "Feedback Analysis", icon: issueIcon },
+            { id: 12, name: "Product Analysis", icon: opportunityIcon },
+            { id: 13, name: "Content Analysis", icon: rfqIcon },
+            { id: 14, name: "Marketing Strategy Analysis", icon: rfpIcon },
+            { id: 15, name: "Sales performance Analysis", icon: rfiIcon },
         ]
     }
 ]
