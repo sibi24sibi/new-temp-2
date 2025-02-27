@@ -108,28 +108,28 @@ const LandingPage = () => {
             {/* Pointer Images with Boxed Labels */}
 
             {/* Pointer Images with Bouncing Labels */}
-            <div className="absolute top-36 right-60 md:block hidden text-center z-10">
+            <div className="absolute top-36 right-60 md:block hidden text-center">
                 <img src={pointer1} alt="pointer1" className="w-10 mx-auto" />
                 <div className="bg-teal-400 text-white translate-x-8 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block animate-bounce-custom">
                     Data Analyst
                 </div>
             </div>
 
-            <div className="absolute top-36 left-64  md:block hidden text-center z-10">
+            <div className="absolute top-36 left-64  md:block hidden text-center">
                 <img src={pointer1} alt="pointer1" className="w-10 mx-auto transform scale-x-[-1]" />
                 <div className="bg-teal-400 text-white translate-x-12 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
                     CEO
                 </div>
             </div>
 
-            <div className="absolute top-72 left-60 md:block hidden text-center z-10">
+            <div className="absolute top-72 left-60 md:block hidden text-center">
                 <img src={pointer2} alt="pointer2" className="w-10 mx-auto transform scale-x-[-1] " />
                 <div className="bg-green-800 text-white translate-x-8 translate-y-3 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
                     Power BI Developer
                 </div>
             </div>
 
-            <div className="absolute top-72 right-72 md:block hidden text-center z-10">
+            <div className="absolute top-72 right-72 md:block hidden text-center">
                 <img src={pointer3} alt="pointer3" className="w-10 mx-auto" />
                 <div className="bg-yellow-500 text-white text-xs translate-x-16 px-2 py-1 mt-1 rounded-md shadow-md inline-block animate-bounce-custom">
                     Analystics Manager

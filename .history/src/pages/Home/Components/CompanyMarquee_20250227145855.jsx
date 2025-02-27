@@ -13,7 +13,7 @@ export const CompanyMarquee = () => {
     const companyImages = [img25, img26, img27, img28, img29, img30, img31, img32];
 
     return (
-        <div className="relative bg-white  py-4   rounded-lg  overflow-hidden">
+        <div className="relative   py-4   rounded-lg  overflow-hidden">
             <h2 className="text-5xl  font-bold text-center text-gray-800 my-10">
                 Trusted by
             </h2>
