@@ -377,7 +377,7 @@ const StatsSection = () => {
                                 <div className="relative flex justify-center overflow-hidden h-48 rounded-md p-4">
                                     <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"></div>
                                     <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent z-10"></div>
-
+                                    
                                     <div className="flex flex-col w-full space-y-3 animate-marquee">
                                         {firstSlice.map((item, index) => (
                                             <div
@@ -385,9 +385,9 @@ const StatsSection = () => {
                                                 className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
                                             >
                                                 {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-80" />
+                                                    <img src={item.icon} alt={item.name} className="w-10 h-10" />
                                                 ) : (
-                                                    <item.icon className="w-10 h-10 opacity-80" />
+                                                    <item.icon className="w-10 h-10" />
                                                 )}
                                                 <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
                                             </div>
@@ -402,9 +402,9 @@ const StatsSection = () => {
                                                 className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
                                             >
                                                 {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-80" />
+                                                    <img src={item.icon} alt={item.name} className="w-10 h-10" />
                                                 ) : (
-                                                    <item.icon className="w-10 h-10 opacity-80" />
+                                                    <item.icon className="w-10 h-10" />
                                                 )}
                                                 <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
                                             </div>
@@ -419,9 +419,9 @@ const StatsSection = () => {
                                                 className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
                                             >
                                                 {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-80" />
+                                                    <img src={item.icon} alt={item.name} className="w-10 h-10" />
                                                 ) : (
-                                                    <item.icon className="w-10 h-10 opacity-80" />
+                                                    <item.icon className="w-10 h-10" />
                                                 )}
                                                 <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
                                             </div>

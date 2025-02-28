@@ -240,7 +240,7 @@ const TestimonialCard = () => {
                 {/* Right Fade */}
                 <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
 
-                <Marquee speed={50} gradient={false} pauseOnClick={true} direction="left">
+                <Marquee speed={50} gradient={false} direction="left">
                     {firstHalf.map((data) => (
                         <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[400px] mx-4 shadow-md">
                             <p className="text-gray-600 italic">{data.text}</p>
@@ -267,7 +267,7 @@ const TestimonialCard = () => {
                 {/* Right Fade */}
                 <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
 
-                <Marquee speed={50} gradient={false} pauseOnClick={true} direction="right">
+                <Marquee speed={50} gradient={false} direction="right">
                     {secondHalf.map((data) => (
                         <div key={data.id} className="relative border rounded-lg p-6 bg-white w-[400px] mx-4 shadow-md">
                             <p className="text-gray-600 italic">{data.text}</p>
