@@ -363,95 +363,60 @@ const StatsSection = () => {
     }, [emblaApi]);
 
     return (
-        <div className="max-w-7xl md:mx-auto mx-3 p-8 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             {/* Navigation Buttons */}
-            <button onClick={scrollPrev} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md">❮</button>
-            <button onClick={scrollNext} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md">❯</button>
+            <button
+                onClick={scrollPrev}
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md z-10 hidden md:block"
+            >
+                ❮
+            </button>
+            <button
+                onClick={scrollNext}
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md z-10 hidden md:block"
+            >
+                ❯
+            </button>
 
             {/* Carousel */}
             <div className="overflow-hidden" ref={emblaRef}>
-                <div className="flex space-x-5">
-                    {statsData.map((stat) => {
-                        const totalIcons = stat.icons.length;
-                        const chunkSize = Math.ceil(totalIcons / 3);
+                <div className="flex space-x-4">
+                    {statsData.map((stat) => (
+                        <div key={stat.id} className="bg-white p-6 flex flex-col gap-4 min-w-[90%] md:min-w-[32%] shadow-md rounded-lg">
+                            {/* Marquee Effect with Icons */}
+                            <div className="relative flex justify-center overflow-hidden h-48 rounded-md p-4">
+                                <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"></div>
+                                <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent z-10"></div>
 
-                        const firstSlice = stat.icons.slice(0, chunkSize);
-                        const secondSlice = stat.icons.slice(chunkSize, chunkSize * 2);
-                        const thirdSlice = stat.icons.slice(chunkSize * 2);
-
-                        return (
-                            <div key={stat.id} className="bg-white  md:p-6 flex flex-col gap-4  min-w-[302px]  md:min-w-[400px]">
-                                {/* Marquee Effect with Slices */}
-                                <div className="relative flex justify-center overflow-hidden h-48 rounded-md p-4">
-                                    <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"></div>
-                                    <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent z-10"></div>
-
-                                    <div className="flex flex-col w-full space-y-3 animate-marquee">
-                                        {firstSlice.map((item, index) => (
-                                            <div
-                                                key={item.id}
-                                                className={`flex flex-col items-center justify-center  gap-1 shadow-md rounded-md p-3 w-20 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
-                                            >
-                                                {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="md:w-10 md:h-10 w-4 h-4 opacity-50" />
-                                                ) : (
-                                                    <item.icon className="md:w-10 md:h-10 w-4 h-4  opacity-50" />
-                                                )}
-                                                <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    {/* Second slice */}
-                                    <div className="flex flex-col w-full space-y-3 animate-marquee-reverse">
-                                        {secondSlice.map((item, index) => (
-                                            <div
-                                                key={item.id}
-                                                className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-20 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
-                                            >
-                                                {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="md:w-10 md:h-10 w-4 h-4  opacity-50" />
-                                                ) : (
-                                                    <item.icon className="md:w-10 md:h-10 w-4 h-4 opacity-50" />
-                                                )}
-                                                <p className="md:text-xs  text-center break-words max-w-[80px]">{item.name}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    {/* Third slice */}
-                                    <div className="flex flex-col w-full space-y-3 animate-marquee">
-                                        {thirdSlice.map((item, index) => (
-                                            <div
-                                                key={item.id}
-                                                className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-20 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
-                                            >
-                                                {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="md:w-10 md:h-10 w-4 h-4  opacity-50" />
-                                                ) : (
-                                                    <item.icon className="md:w-10 md:h-10  h-4  opacity-50" />
-                                                )}
-                                                <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Stats Info */}
-                                <div className="text-center">
-                                    <p className="text-lg text-[#4a4a4a]">{stat.subtitle}</p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                                    {stat.icons.map((item, index) => (
+                                        <div
+                                            key={item.id}
+                                            className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? "bg-green-100" : "bg-green-200"
+                                                }`}
+                                        >
+                                            {typeof item.icon === "string" ? (
+                                                <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-50" />
+                                            ) : (
+                                                <item.icon className="w-12 h-12 md:w-16 md:h-16 opacity-50" />
+                                            )}
+                                            <p className="text-xs md:text-sm text-center break-words max-w-[80px]">{item.name}</p>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                        );
-                    })}
+
+                            {/* Stats Info */}
+                            <div className="text-center">
+                                <p className="text-lg font-semibold text-gray-800">{stat.subtitle}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
-
-
     );
 };
 
 export default StatsSection;
-
 

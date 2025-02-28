@@ -363,7 +363,7 @@ const StatsSection = () => {
     }, [emblaApi]);
 
     return (
-        <div className="max-w-7xl md:mx-auto mx-3 p-8 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto p-8 overflow-hidden relative">
             {/* Navigation Buttons */}
             <button onClick={scrollPrev} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md">❮</button>
             <button onClick={scrollNext} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md">❯</button>

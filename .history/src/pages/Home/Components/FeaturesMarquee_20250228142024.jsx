@@ -363,7 +363,7 @@ const StatsSection = () => {
     }, [emblaApi]);
 
     return (
-        <div className="max-w-7xl md:mx-auto mx-3 p-8 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto p-8 overflow-hidden relative">
             {/* Navigation Buttons */}
             <button onClick={scrollPrev} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md">❮</button>
             <button onClick={scrollNext} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md">❯</button>
@@ -380,7 +380,7 @@ const StatsSection = () => {
                         const thirdSlice = stat.icons.slice(chunkSize * 2);
 
                         return (
-                            <div key={stat.id} className="bg-white  md:p-6 flex flex-col gap-4  min-w-[302px]  md:min-w-[400px]">
+                            <div key={stat.id} className="bg-white  md:p-6 flex flex-col gap-4  min-w-16  min-w-[400px]">
                                 {/* Marquee Effect with Slices */}
                                 <div className="relative flex justify-center overflow-hidden h-48 rounded-md p-4">
                                     <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"></div>
