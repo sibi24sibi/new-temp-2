@@ -18,13 +18,12 @@ function Home() {
             <LandingPage />
             <CompanyMarquee />
             <Second />
-            <TestimonialCard leftToRight={true} />
             <Third />
-            <TestimonialCard leftToRight={false} />
             <Fourth />
             <StatsSection />
             <Fifth />
             <Sixth />
+            <TestimonialCard />
             <Sixth2 />
             <Seventh />
             <Eightth />

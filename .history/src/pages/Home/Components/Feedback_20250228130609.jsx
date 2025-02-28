@@ -224,8 +224,6 @@ const getSocialIcon = (social) => {
     }
     return null;
 };
-
-
 const TestimonialCard = ({ leftToRight = true }) => {
     const testimonialsToShow = leftToRight
         ? testimonials.slice(0, Math.ceil(testimonials.length / 2))

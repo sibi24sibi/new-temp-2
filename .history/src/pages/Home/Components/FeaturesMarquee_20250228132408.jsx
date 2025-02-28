@@ -359,7 +359,7 @@ const StatsSection = () => {
 
             {/* Carousel */}
             <div className="overflow-hidden" ref={emblaRef}>
-                <div className="flex space-x-6 ml-6">
+                <div className="flex space-x-6 ml-8">
                     {statsData.map((stat) => {
                         const totalIcons = stat.icons.length;
                         const chunkSize = Math.ceil(totalIcons / 3);

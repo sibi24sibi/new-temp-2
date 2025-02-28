@@ -215,17 +215,6 @@ It’s an investment that pays off."`,
         social: "twitter",
     }
 ];
-
-const getSocialIcon = (social) => {
-    if (social === "linkedin") {
-        return <FaLinkedin size={20} className="text-gray-400" />;
-    } else if (social === "twitter") {
-        return <FaXTwitter size={20} className="text-gray-400" />;
-    }
-    return null;
-};
-
-
 const TestimonialCard = ({ leftToRight = true }) => {
     const testimonialsToShow = leftToRight
         ? testimonials.slice(0, Math.ceil(testimonials.length / 2))

@@ -359,7 +359,7 @@ const StatsSection = () => {
 
             {/* Carousel */}
             <div className="overflow-hidden" ref={emblaRef}>
-                <div className="flex space-x-6 ml-6">
+                <div className="flex space-x-6">
                     {statsData.map((stat) => {
                         const totalIcons = stat.icons.length;
                         const chunkSize = Math.ceil(totalIcons / 3);
@@ -369,7 +369,7 @@ const StatsSection = () => {
                         const thirdSlice = stat.icons.slice(chunkSize * 2);
 
                         return (
-                            <div key={stat.id} className="bg-white  p-6 flex flex-col gap-4 min-w-96">
+                            <div key={stat.id} className="bg-white  p-6 shadow-lg flex flex-col gap-4 min-w-96">
                                 {/* Marquee Effect with Slices */}
                                 <div className="relative flex justify-center overflow-hidden h-48 rounded-md p-4">
                                     <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"></div>
@@ -382,9 +382,9 @@ const StatsSection = () => {
                                                 className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
                                             >
                                                 {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-50" />
+                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-80" />
                                                 ) : (
-                                                    <item.icon className="w-10 h-10 opacity-50" />
+                                                    <item.icon className="w-10 h-10 opacity-80" />
                                                 )}
                                                 <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
                                             </div>
@@ -399,9 +399,9 @@ const StatsSection = () => {
                                                 className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
                                             >
                                                 {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-50" />
+                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-80" />
                                                 ) : (
-                                                    <item.icon className="w-10 h-10 opacity-50" />
+                                                    <item.icon className="w-10 h-10 opacity-80" />
                                                 )}
                                                 <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
                                             </div>
@@ -416,9 +416,9 @@ const StatsSection = () => {
                                                 className={`flex flex-col items-center justify-center gap-2 shadow-md rounded-md p-3 w-24 ${index % 2 === 0 ? 'bg-green-100' : 'bg-green-200'}`}
                                             >
                                                 {typeof item.icon === "string" ? (
-                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-50" />
+                                                    <img src={item.icon} alt={item.name} className="w-10 h-10 opacity-80" />
                                                 ) : (
-                                                    <item.icon className="w-10 h-10 opacity-50" />
+                                                    <item.icon className="w-10 h-10 opacity-80" />
                                                 )}
                                                 <p className="text-xs text-center break-words max-w-[80px]">{item.name}</p>
                                             </div>
