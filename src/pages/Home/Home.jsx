@@ -12,7 +12,7 @@ import Nine from './Components/Nine'
 import { CompanyMarquee } from './Components/CompanyMarquee'
 import StatsSection from './Components/FeaturesMarquee'
 import TestimonialCard from './Components/Feedback'
-import GetInTouch from './Components/getInTouch'
+import GetInTouch from "./Components/GetInTouch";
 import Footer from '@/components/Footer/Footer'
 function Home() {
     return (
