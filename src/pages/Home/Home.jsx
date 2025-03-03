@@ -17,22 +17,24 @@ import Footer from '@/components/Footer/Footer'
 function Home() {
     return (
         <>
-            <LandingPage />
-            <CompanyMarquee />
-            <Second />
-            <TestimonialCard />
-            <Third />
-            <StatsSection />
+            <div className='home fixed h-[calc(100vh-72px)] bottom-0 overflow-y-auto w-full pt-16 md:pt-0'>
+                <LandingPage />
+                <CompanyMarquee />
+                <Second />
+                <TestimonialCard />
+                <Third />
+                <StatsSection />
 
-            <Fourth />
-            <Fifth />
-            <Sixth />
-            <Sixth2 />
-            <Seventh />
-            <Eightth />
-            <Nine />
-            <GetInTouch />
-            <Footer />
+                <Fourth />
+                <Fifth />
+                <Sixth />
+                <Sixth2 />
+                <Seventh />
+                <Eightth />
+                <Nine />
+                <GetInTouch />
+                <Footer />
+            </div>
         </>
     )
 }

@@ -122,19 +122,19 @@ pre::-webkit-scrollbar-thumb:hover {
   display: none; /* For Chrome, Safari, and Edge */
 }
 
-.docscontainer{
-  @apply docs-content-scrollbar ml-[80px] w-[calc(100vw-80px)] md:w-full md:mx-auto h-[calc(100vh-68px)] overflow-y-auto
+.docscontainer {
+  @apply docs-content-scrollbar ml-[80px] w-[calc(100vw-80px)] md:w-full md:mx-auto h-[calc(100vh-68px)] overflow-y-auto;
 }
 
-.bg5{
-  @apply bg-green-500
+.bg5 {
+  @apply bg-green-500;
 }
-.bggrad{
+.bggrad {
   /* @apply bg-gradient-to-r from-cyan-600 to-lime-400 */
-  @apply bg-gradient-to-r from-[#29AE93] to-[#4EC07A]
+  @apply bg-gradient-to-r from-[#29AE93] to-[#4EC07A];
 }
-.bggrad2{
-  @apply bg-gradient-to-r from-cyan-400 to-lime-800
+.bggrad2 {
+  @apply bg-gradient-to-r from-cyan-400 to-lime-800;
 }
 
 @layer base {
@@ -224,8 +224,6 @@ pre::-webkit-scrollbar-thumb:hover {
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -233,4 +231,83 @@ pre::-webkit-scrollbar-thumb:hover {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* For the entire scrollbar */
+pre::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
+}
+
+/* Track (the background of the scrollbar) */
+pre::-webkit-scrollbar-track {
+  background: #2d3748; /* Match the background color of the container */
+  border-radius: 6px;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+pre::-webkit-scrollbar-thumb {
+  background: #4a5568; /* Color of the scrollbar handle */
+  border-radius: 6px;
+  border: 1px solid #2d3748; /* Match the track color */
+}
+
+/* Handle on hover */
+pre::-webkit-scrollbar-thumb:hover {
+  background: #718096; /* Lighter color on hover */
+}
+
+/* Sidebar */
+.docssidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.docssidebar::-webkit-scrollbar-thumb {
+  background-color: #c1fdd7; /* Tailwind bg-green-500 */
+  border-radius: 8px;
+}
+
+/* Content */
+.docscontent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.docscontent::-webkit-scrollbar-thumb {
+  background-color: #4cba8b; /* Tailwind bg-green-500 */
+  border-radius: 8px;
+}
+.consult::-webkit-scrollbar {
+  width: 8px;
+}
+
+.consult::-webkit-scrollbar-thumb {
+  background-color: #299e7b; /* Tailwind bg-green-500 */
+  border-radius: 8px;
+}
+.home::-webkit-scrollbar {
+  width: 8px;
+}
+
+.home::-webkit-scrollbar-thumb {
+  background-color: #299e7b; /* Tailwind bg-green-500 */
+  border-radius: 8px;
+}
+.docs-content-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.docs-content-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4cba8b; /* Tailwind bg-green-500 */
+  border-radius: 8px;
+}
+.docsidebar {
+  scrollbar-width: none; /* For Firefox */
+}
+
+.docsidebar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.docscontainer {
+  @apply docs-content-scrollbar ml-[80px] w-[calc(100vw-80px)] md:w-full md:mx-auto h-[calc(100vh-68px)] overflow-y-auto;
 }
