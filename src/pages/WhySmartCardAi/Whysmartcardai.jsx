@@ -51,7 +51,7 @@ const Whysmartcardai = () => {
         <div className="text-center mt-12"  >
           <h2 className="text-2xl font-bold text-emerald-500">Transform Your Data into a Competitive Advantage</h2>
           <p className="mt-2 text-gray-800">✅ Reduce manual effort. ✅ Increase efficiency. ✅ Make smarter decisions.</p>
-          <a href="#" className="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-green-600">🚀 Experience AI-Driven BI Now!</a>
+          {/* <a href="#" className="mt-6 inline-block bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-green-600">🚀 Experience AI-Driven BI Now!</a> */}
         </div>
       </section>
     </div>

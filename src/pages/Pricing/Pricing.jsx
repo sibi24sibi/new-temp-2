@@ -151,7 +151,7 @@ const Pricing = () => {
       console.log("Headers:", config.headers);
 
       const response = await axios.post(
-        "http://127.0.0.1/process_payment",
+        "http://127.0.0.1:5000/process_payment",
         payload,
         config
       );

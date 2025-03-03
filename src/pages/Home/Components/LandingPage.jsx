@@ -103,7 +103,8 @@ const LandingPage = () => {
         if (currentPageRight > 1) setCurrentPageRight(currentPageRight - 1);
     };
     return (
-        <div className="max-w-[1200px] md:min-w-[60%] mx-auto p-6 relative my-10">
+        <div className="max-w-[1200px] md:min-w-[60%] mx-auto p-6 relative md:my-10">
+            {/* Header */}
             {/* Header */}
             {/* Pointer Images with Boxed Labels */}
 
@@ -137,15 +138,155 @@ const LandingPage = () => {
             </div>
 
             {/* Header Text */}
-            <div className="text-center mb-8 my-10">
+            <div className="text-center mb-8 md:my-10">
                 <h1 className="md:text-6xl text-center text-3xl font-bold mb-4 md:mx-36">
                     Generative BI Dashboard Development Tool
                 </h1>
                 <h2 className="md:text-2xl text-xl mb-4">With Modern BI Architecture</h2>
                 <p className="text-gray-600">Leverage Generative AI to Develop Business Intelligence Dashboards</p>
             </div>
-        </div>
 
+            {/* Main Content Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:mt-28 rounded-lg shadow-lg border-2 border-gray-300 p-6">
+                {/* Left Column - Metrics and Chart */}
+                <div className="space-y-6">
+                    {/* Metrics Row */}
+                    <div className="hidden md:grid grid-cols-3 gap-4">
+                        <MetricCard2
+                            title="Avg Lifetime Value"
+                            value="2,692"
+                            change="+$12"
+                            prefix="$"
+                        />
+                        <MetricCard2
+                            title="Win Rate"
+                            value="10.2%"
+                            change="+0.8%"
+                        />
+                        <MetricCard2
+                            title="Lead to Win Ratio"
+                            value="5:1"
+                            change="+7%"
+                        />
+                    </div>
+                    <div className="md:hidden grid grid-cols-3 gap-4">
+                        <MetricCard
+                            title="Avg"
+                            value="2,692"
+                            change="+$12"
+                            prefix="$"
+                        />
+                        <MetricCard
+                            title="Rate"
+                            value="10.2%"
+                            change="+0.8%"
+                        />
+                        <MetricCard
+                            title="Ratio"
+                            value="5:1"
+                            change="+7%"
+                        />
+                    </div>
+
+
+                    {/* Chart Section */}
+                    <div className="hidden sm:flex flex-col bg-white p-4 rounded-lg border-2 border-gray-200">
+                        <h3 className="text-lg font-semibold mb-4 text-center">Stores Sales Trend</h3>
+                        <ResponsiveContainer height={300} className='overflow-x-auto'>
+                            <BarChart data={salesData} >
+                                <CartesianGrid strokeDasharray="2 2" />
+                                <XAxis dataKey="Year" />
+                                <YAxis />
+                                <Tooltip />
+                                <Bar dataKey="previous" className="fill-gray-400" />
+                                {/* <Bar dataKey="previous" fill="#e5e7eb" /> */}
+                                <Bar dataKey="current" className="fill-green-500" />
+                                {/* <Bar dataKey="current" fill="#3b82f6" /> */}
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </div>
+                    <div className="sm:hidden flex flex-col bg-white p-4 rounded-lg border-2 border-gray-200">
+                        <h3 className="text-lg font-semibold mb-4 text-center">Stores Sales Trend</h3>
+                        <ResponsiveContainer height={250}>
+                            <BarChart data={salesData2} >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="Year" />
+                                <YAxis />
+                                <Tooltip />
+                                <Bar dataKey="previous" className="fill-gray-400" />
+                                {/* <Bar dataKey="previous" fill="#e5e7eb" /> */}
+                                <Bar dataKey="current" className="fill-green-500" />
+                                {/* <Bar dataKey="current" fill="#3b82f6" /> */}
+                            </BarChart>
+                        </ResponsiveContainer>
+                    </div>
+                </div>
+
+                {/* Right Column - Sales Ranking */}
+                <div className="bg-white p-4 rounded-lg  h-full border-2 border-gray-200">
+                    <div className="flex flex-row items-center space-x-4 mb-6">
+                        <button className="flex items-center space-x-2 bg-blue-50 text-blue-600 px-4 py-2 rounded">
+                            <span>All Year</span>
+                            <ChevronDown size={16} />
+                        </button>
+                        <div className="flex flex-row items-center space-x-2">
+                            <div className="flex items-center space-x-2">
+                                <input
+                                    type="text"
+                                    placeholder="Start Date"
+                                    className="border p-2 rounded text-sm w-full md:w-auto"
+                                />
+                                <Calendar size={16} className="text-gray-400" />
+                            </div>
+                            <div className="flex items-center space-x-2">
+                                <input
+                                    type="text"
+                                    placeholder="End Date"
+                                    className="border p-2 rounded text-sm w-full md:w-auto"
+                                />
+                                <Calendar size={16} className="text-gray-400" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border-2 border-gray-200 rounded-lg p-4 shadow-sm">
+
+                        <h3 className="text-lg font-semibold mb-4">Item Pricing</h3>
+                        <div className="space-y-4 h-[185px] md:h-[250px]">
+                            {currentRowsRight.map((item) => (
+                                <div key={item.id} className="flex justify-between items-center">
+                                    <div className="flex items-center space-x-4">
+                                        <span className="text-blue-500 w-6">{item.id}</span>
+                                        <span>{item.product}</span> {/* Use `product` instead of `item` */}
+                                    </div>
+                                    <span className="font-semibold">
+                                        ${item.amount.toLocaleString()} {/* Use `amount` instead of `price` */}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Pagination Controls for Right-side Table */}
+                        <div className="flex justify-between items-center mt-6">
+                            <button
+                                className={`px-4 py-2 bg-gray-200 rounded ${currentPageRight === 1 && 'opacity-50'}`}
+                                onClick={handlePreviousPageRight}
+                                disabled={currentPageRight === 1}
+                            >
+                                <MoveLeft />
+                            </button>
+                            <span>Page {currentPageRight} of {totalPagesRight}</span>
+                            <button
+                                className={`px-4 py-2 bg-gray-200 rounded ${currentPageRight === totalPagesRight && 'opacity-50'}`}
+                                onClick={handleNextPageRight}
+                                disabled={currentPageRight === totalPagesRight}
+                            >
+                                <MoveRight />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 

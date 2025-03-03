@@ -12,30 +12,28 @@ import Nine from './Components/Nine'
 import { CompanyMarquee } from './Components/CompanyMarquee'
 import StatsSection from './Components/FeaturesMarquee'
 import TestimonialCard from './Components/Feedback'
-import GetInTouch from "./Components/GetInTouch";
 import Footer from '@/components/Footer/Footer'
+import GetInTouch from './Components/GetInTouch'
 function Home() {
     return (
-        <>
-            <div className='home fixed h-[calc(100vh-72px)] bottom-0 overflow-y-auto w-full pt-16 md:pt-0'>
-                <LandingPage />
-                <CompanyMarquee />
-                <Second />
-                <TestimonialCard />
-                <Third />
-                <StatsSection />
+        <div className='home fixed h-[calc(100vh-72px)] bottom-0 overflow-y-auto w-full pt-16 md:pt-0'>
+            <LandingPage />
+            <CompanyMarquee />
+            <Second />
+            <TestimonialCard />
+            <Third />
+            <StatsSection />
+            <Fourth />
+            <Fifth />
+            {/* <Sixth />
+            <Sixth2 /> */}
+            <Seventh />
+            <Eightth />
+            <Nine />
+            <GetInTouch />
+            <Footer />
 
-                <Fourth />
-                <Fifth />
-                <Sixth />
-                <Sixth2 />
-                <Seventh />
-                <Eightth />
-                <Nine />
-                <GetInTouch />
-                <Footer />
-            </div>
-        </>
+        </div>
     )
 }
 

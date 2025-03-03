@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Rocket, LineChart, Timer, Sparkles } from "lucide-react";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+// import {
+//   HoverCard,
+//   HoverCardContent,
+//   HoverCardTrigger,
+// } from "@/components/ui/hover-card";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Consulting = () => {
@@ -91,7 +91,19 @@ const Consulting = () => {
           </div>
         </div>
         {/* CTA Section */}
-        <HoverCard>
+          <div className="text-center flex flex-col items-center gap-4">
+            <h3 className="text-2xl font-semibold text-gray-900">
+              Ready to revolutionize your analytics?
+            </h3>
+            <p className="text-lg text-gray-600">
+              Contact us now and let's build your next dashboard in record time!
+            </p>
+            <a href="mailto:sales@smartcardai.com" className="w-max bg-emerald-500 text-white px-8 py-3 rounded-full font-medium hover:bg-emerald-600 transition-colors">
+             Contact Sales
+            </a>
+              
+          </div>
+        {/* <HoverCard>
           <div className="text-center mt-12">
             <h3 className="text-2xl font-semibold text-gray-900">
               Ready to revolutionize your analytics?
@@ -111,7 +123,7 @@ const Consulting = () => {
               </div>
             </HoverCardContent>
           </div>
-        </HoverCard>
+        </HoverCard> */}
       </div>
     </div>
   );

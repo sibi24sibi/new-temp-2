@@ -25,7 +25,6 @@ import Features from './pages/Features/Features';
 import Smartcardai from './pages/Product/Smartcardai';
 import Whysmartcardai from './pages/WhySmartCardAi/Whysmartcardai';
 import AdvancedAnalytics from './pages/Docs/Components/AdvancedAnalytics';
-import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -73,7 +72,6 @@ const App = () => {
         <Route path="/training" element={<Training />} />
         <Route path="/orders" element={<Orders />} />
       </Routes>
-
       <ToastContainer />
     </BrowserRouter>
   );
