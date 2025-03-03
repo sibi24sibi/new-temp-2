@@ -73,7 +73,7 @@ const App = () => {
         <Route path="/training" element={<Training />} />
         <Route path="/orders" element={<Orders />} />
       </Routes>
-      <Footer />
+
       <ToastContainer />
     </BrowserRouter>
   );

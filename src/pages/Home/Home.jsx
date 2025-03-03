@@ -12,7 +12,8 @@ import Nine from './Components/Nine'
 import { CompanyMarquee } from './Components/CompanyMarquee'
 import StatsSection from './Components/FeaturesMarquee'
 import TestimonialCard from './Components/Feedback'
-import GetInTouch from './Components/GetInTouch'
+import GetInTouch from './Components/getInTouch'
+import Footer from '@/components/Footer/Footer'
 function Home() {
     return (
         <>
@@ -25,12 +26,13 @@ function Home() {
 
             <Fourth />
             <Fifth />
-            {/* <Sixth />
-            <Sixth2 /> */}
+            <Sixth />
+            <Sixth2 />
             <Seventh />
             <Eightth />
             <Nine />
             <GetInTouch />
+            <Footer />
         </>
     )
 }
