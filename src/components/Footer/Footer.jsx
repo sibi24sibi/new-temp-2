@@ -51,18 +51,18 @@ const Footer = () => {
 
                     {/* Column 2 */}
                     <div className="flex flex-col gap-2 ">
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        {/* <Link to="/" className="hover:text-gray-300 transition-colors">
                             Courses
-                        </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        </Link> */}
+                        {/* <Link to="/" className="hover:text-gray-300 transition-colors">
                             Tutorials
-                        </Link>
+                        </Link> */}
                         <Link to="/" className="hover:text-gray-300 transition-colors">
                             Partnerships
                         </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        {/* <Link to="/" className="hover:text-gray-300 transition-colors">
                             Data Analyst Support
-                        </Link>
+                        </Link> */}
                         <Link to="/" className="hover:text-gray-300 transition-colors">
                             Privacy Policy
                         </Link>

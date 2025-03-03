@@ -41,7 +41,7 @@ const Second = () => {
                                     <Tooltip />
                                     <Bar dataKey="previous" className="fill-gray-400" />
                                     {/* <Bar dataKey="previous" fill="#e5e7eb" /> */}
-                                    <Bar dataKey="current" className="fill-green-400" />
+                                    <Bar dataKey="current" className="fill-green-500" />
                                     {/* <Bar dataKey="current" fill="#3b82f6" /> */}
                                 </BarChart>
                             </ResponsiveContainer>
@@ -58,7 +58,7 @@ const Second = () => {
                                     <Tooltip />
                                     <Bar dataKey="previous" className="fill-gray-400" />
                                     {/* <Bar dataKey="previous" fill="#e5e7eb" /> */}
-                                    <Bar dataKey="current" className="fill-green-400" />
+                                    <Bar dataKey="current" className="fill-green-500" />
                                     {/* <Bar dataKey="current" fill="#3b82f6" /> */}
                                 </BarChart>
                             </ResponsiveContainer>
@@ -79,7 +79,7 @@ const Second = () => {
                 {/* Graphs Grid */}
                 <div className="my-auto">
                     <h2 className="text-lg font-bold mb-4">Graphs</h2>
-                    <div className="bg-green-200 p-4 rounded-xl">
+                    <div className="bg-green-500 bg-opacity-70 p-4 rounded-xl">
                         <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4">
                             {/* Graph Cards */}
                             {['Gauge', 'Line', 'Area', 'Bar', 'Pie', 'More'].map((type) => (
@@ -115,7 +115,7 @@ const Second = () => {
                 {/* Libraries Grid */}
                 <div>
                     <h2 className="text-lg font-bold mb-4">Graphing Libraries</h2>
-                    <div className="bg-green-200 p-4 rounded-xl">
+                    <div className="bg-green-500 bg-opacity-70 p-4 rounded-xl">
                         <div className="grid grid-cols-3 gap-2 md:gap-4">
                             <div className="bg-white rounded-lg p-4 flex flex-col items-center justify-center aspect-square md:aspect-auto">
                                 <img src="/images/D3.png" className='w-8 h-8 md:w-16 md:h-16' alt="" />

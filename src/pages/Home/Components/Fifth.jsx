@@ -15,7 +15,7 @@ const Fifth = () => {
                 {/* Graphs Grid */}
                 <div className="py-auto">
                     <h2 className="text-lg font-bold mb-4">Scorecard Templates</h2>
-                    <div className="bg-green-200 p-4 rounded-xl">
+                    <div className="bg-green-500 bg-opacity-70 p-4 rounded-xl">
                         <div className="grid grid-cols-1 md:grid-cols-3  gap-4">
                             <div className='bg-white rounded-lg h-max-content py-6 flex flex-col items-center justify-center gap-2'>
                                 <h3 className='text-lg font-bold'>Max Sales</h3>
@@ -33,9 +33,8 @@ const Fifth = () => {
                                 <h3 className='text-lg'>$300,000</h3>
                             </div>
                             <div className='bg-purple-700 text-white rounded-lg px-2 h-max-content py-6 flex flex-col items-center justify-center gap-2'>
-                                <h3 className='text-lg font-bold'>Max Sales Jan,2025</h3>
-                                <h3 className='text-lg'>$300,000</h3>
-                                <h3 className='text-lg font-bold'>Max Sales Feb,2025</h3>
+                                <h3 className='text-lg font-bold'>Max Sales</h3>
+                                <h3 className='text-lg font-bold'>Jan,2025</h3>
                                 <h3 className='text-lg'>$300,000</h3>
                             </div>
                             <div className='bg-yellow-500 text-black rounded-lg px-2 h-max-content py-6 flex flex-col items-center justify-center gap-2'>

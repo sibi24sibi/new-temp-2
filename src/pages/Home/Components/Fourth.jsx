@@ -41,7 +41,7 @@ const Fourth = () => {
                 {/* Graphs Grid */}
                 <div className="mb-8">
                     <h2 className="text-lg font-bold mb-4">Heatmap</h2>
-                    <div className="bg-green-200 p-4 rounded-lg h-[350px]">
+                    <div className="bg-green-500 bg-opacity-70 p-4 rounded-lg h-[350px]">
                         <Heatmap />
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Fourth = () => {
                 {/* Libraries Grid */}
                 <div>
                     <h2 className="text-lg font-bold mb-4">Map Libraries</h2>
-                    <div className="bg-green-200 p-4 rounded-xl">
+                    <div className="bg-green-500 bg-opacity-70 p-4 rounded-xl">
                         <div className="grid grid-cols-3 gap-2 md:gap-4">
                             <div className="bg-white rounded-lg p-4 flex flex-col items-center justify-center aspect-square md:aspect-auto">
                                 <img src="https://i.postimg.cc/QCMCmrn1/pie1-4.png" className="w-8 h-8 md:{h-20 w-20}" alt="" />

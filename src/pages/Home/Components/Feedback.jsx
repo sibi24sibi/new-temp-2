@@ -32,7 +32,7 @@ const TestimonialCard = () => {
                     gradient={false}
                     pauseOnHover={false}
                     pauseOnClick={false}
-                    play={!pausedRow1} // Controlled by state
+                    play={!pausedRow1}
                     direction="left"
                 >
                     {firstHalf.map((data) => (

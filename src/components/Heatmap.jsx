@@ -96,7 +96,7 @@ const Heatmap = () => {
                         `${data.region}: $${data.sales.toLocaleString()}`
                     );
 
-                    new maplibregl.Marker({ color: 'red' })
+                    new maplibregl.Marker({ color: '#22c55e' })
                         .setLngLat(data.coordinates)
                         .setPopup(popup) // Add popup to the marker
                         .addTo(map.current);

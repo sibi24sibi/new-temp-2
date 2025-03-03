@@ -103,7 +103,7 @@ const LandingPage = () => {
         if (currentPageRight > 1) setCurrentPageRight(currentPageRight - 1);
     };
     return (
-        <div className="max-w-[1200px] md:min-w-[60%] mx-auto p-6 relative">
+        <div className="max-w-[1200px] md:min-w-[60%] mx-auto p-6 relative my-10">
             {/* Header */}
             {/* Pointer Images with Boxed Labels */}
 
@@ -117,15 +117,15 @@ const LandingPage = () => {
 
             <div className="absolute top-32  left-36   md:block hidden text-center z-10">
                 <img src={pointer1} alt="pointer1" className="w-10 mx-auto transform scale-x-[-1]" />
-                <div className="bg-teal-400 text-white translate-x-12 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
+                <div className="bg-teal-400 text-white -translate-x-4 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block  animate-bounce-custom ">
                     CEO
                 </div>
             </div>
 
             <div className="absolute top-72 left-60 md:block hidden text-center z-10">
                 <img src={pointer2} alt="pointer2" className="w-10 mx-auto transform scale-x-[-1] " />
-                <div className="bg-green-800 text-white translate-x-8 translate-y-3 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block transform scale-x-[-1] animate-bounce-custom">
-                    Power BI Developer
+                <div className="bg-green-800 text-white translate-x-8 translate-y-3 text-xs px-2 py-1 mt-1 rounded-md shadow-md inline-block  animate-bounce-custom">
+                    BI Developer
                 </div>
             </div>
 

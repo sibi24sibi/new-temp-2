@@ -39,7 +39,7 @@ const Signup = () => {
       if (response.status === 200) {
         setMessage('Sign-up successful!');
         // Optional: Navigate to login page after successful signup
-        setTimeout(() => navigate('/login'), 2000);
+        setTimeout(() => navigate('/orders'), 2000);
       } else {
         setMessage(`Error: ${response.data.message || 'Failed to sign up'}`);
       }
@@ -72,7 +72,7 @@ const Signup = () => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center bg-gray-100 py-8'>
+    <div className='flex flex-col items-center justify-center bg-gray-100 py-8 mt-[72px]'>
       <div className='bg-white flex flex-col items-center p-6 shadow-lg rounded-lg w-96'>
         <div className='flex flex-row items-center justify-center mb-6'>
           <img className='h-16 w-16' src="/images/logo-without-bg.png" alt="Logo" />

@@ -25,7 +25,7 @@ const Login = () => {
             const token_type = query.get('token_type');
             if (access_token && token_type) {
                 login({ access_token, token_type });
-                return navigate('/');
+                return navigate('/orders');
             }
         }
     }, [user, login, navigate]);

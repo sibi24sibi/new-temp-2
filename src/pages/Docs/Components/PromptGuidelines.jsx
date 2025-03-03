@@ -1,13 +1,13 @@
-import Eightth from "./../../../pages/Home/Components/Eightth";
-import Fifth from "./../../pages/Home/Components/Fifth";
-import Fourth from "./../../pages/Home/Components/Fourth";
-import LandingPage from "./../../pages/Home/Components/LandingPage";
-import Nine from "./../../pages/Home/Components/Nine";
-import Second from "./../../pages/Home/Components/Second";
-import Sixth from "./../../pages/Home/Components/Sixth";
-import Third from "../../../pages/Home/Third";
+import Eightth from "@/pages/Home/Components/Eightth";
+import Fifth from "@/pages/Home/Components/Fifth";
+import Fourth from "@/pages/Home/Components/Fourth";
+import LandingPage from "@/pages/Home/Components/LandingPage";
+import Nine from "@/pages/Home/Components/Nine";
+import Second from "@/pages/Home/Components/Second";
+import Sixth from "@/pages/Home/Components/Sixth";
+import Third from "@/pages/Home/Components/Third";
 import React, { useState, useEffect } from "react";
-import { useParams, useOutletContext } from "react-router-dom";
+import { useParams,useOutletContext  } from "react-router-dom";
 import Fifth2 from "./Fifth2";
 
 const PromptGuidelines = () => {
@@ -71,9 +71,9 @@ const PromptGuidelines = () => {
 
   return (
     <div className={`docscontent transition-all duration-500 ml-20 ${isMenuVisible ? "md:ml-[250px]" : ""} h-[calc(100vh-64px)] overflow-y-auto overflow-x-hidden`}>
-      {/* <div className="docscontent ml-20 md:ml-[250px] h-[calc(100vh-64px)] overflow-y-auto overflow-x-hidden"> */}
+    {/* <div className="docscontent ml-20 md:ml-[250px] h-[calc(100vh-64px)] overflow-y-auto overflow-x-hidden"> */}
       <div className="flex flex-col w-full justify-start p-6 md:w-[100%] md:mx-auto lg:items-start">
-        {isPromptingGuidelinesRoute && (
+      {isPromptingGuidelinesRoute && (
           <h2 className="text-3xl font-bold text-[#4cba8b] mb-6 text-center">
             Prompting Guidelines
           </h2>
@@ -91,10 +91,11 @@ const PromptGuidelines = () => {
               {Object.keys(guidelines).map((guideline) => (
                 <li
                   key={guideline}
-                  className={`p-2 cursor-pointer rounded-lg ${activeGuideline === guideline
-                    ? "bg-[#4cba8b] text-white"
-                    : "bg-gray-200 hover:bg-gray-300"
-                    }`}
+                  className={`p-2 cursor-pointer rounded-lg ${
+                    activeGuideline === guideline
+                      ? "bg-[#4cba8b] text-white"
+                      : "bg-gray-200 hover:bg-gray-300"
+                  }`}
                   onClick={() => setActiveGuideline(guideline)}
                 >
                   <span className="font-semibold">

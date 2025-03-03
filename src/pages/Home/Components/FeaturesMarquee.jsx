@@ -380,7 +380,7 @@ const StatsSection = () => {
                         const thirdSlice = stat.icons.slice(chunkSize * 2);
 
                         return (
-                            <div key={stat.id} className="bg-white  md:p-6 flex flex-col gap-4  min-w-[302px]  md:min-w-[400px]">
+                            <div key={stat.id} className="bg-white  md:p-6 flex flex-col gap-4  min-w-[290px]  md:min-w-[400px]">
                                 {/* Marquee Effect with Slices */}
                                 <div className="relative flex justify-center overflow-hidden h-48 rounded-md p-4">
                                     <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-white to-transparent z-10"></div>

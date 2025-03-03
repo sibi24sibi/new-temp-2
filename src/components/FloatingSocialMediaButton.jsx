@@ -15,25 +15,25 @@ const FloatingSocialMediaButton = () => {
             {/* Overlay */}
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-50 z-40"
-                    onClick={toggleMenu}
+                    className="fixed inset-0 bg-black bg-opacity-70 z-[200]"        
+                     onClick={toggleMenu}
                 ></div>
             )}
 
             {/* Floating Button and Icons */}
-            <div className="fixed bottom-10 right-10 flex flex-col items-end space-y-4 z-50">
+            <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10 flex flex-col items-end space-y-6 z-[200]">
                 {isOpen && (
                     <div className="flex flex-col items-center space-y-4">
                         <a
                             href="https://wa.me/+918714756263"
-                            className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:scale-110"
+                            className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:bg-green-600"
                         >
                             <FaWhatsapp  color="white" size="24" />
                         </a>
 
                         <a
                             href="mailto:sales@smartcardai.com"
-                            className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:scale-110"
+                            className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:bg-green-600"
                         >
                             <FaEnvelope color="white" size="24" />
                         </a>
@@ -42,7 +42,7 @@ const FloatingSocialMediaButton = () => {
                             href="https://www.linkedin.com/company/smartcard-ai/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:scale-110"
+                            className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:bg-green-600"
                         >
                             <FaLinkedin color="white" size="24" />
                         </a>
@@ -51,7 +51,7 @@ const FloatingSocialMediaButton = () => {
 
                 {/* Toggle Button */}
                 <button
-                    className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:scale-110"
+                    className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center shadow transform transition-transform duration-300 hover:bg-green-600"
                     onClick={toggleMenu}
                 >
                     {isOpen ? (

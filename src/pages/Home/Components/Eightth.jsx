@@ -16,9 +16,9 @@ const Eightth = () => {
                 {/* Graphes Grid */}
                 <div className="mb-8 flex flex-col gap-6">
                     <h2 className="text-lg font-bold mb-4">Insight Generation</h2>
-                    <div className="border-2 border-green-300 rounded-lg p-4 shadow-md bg-green-300 w-[80%] mx-auto">
+                    <div className=" rounded-lg p-4 shadow-md bg-green-500 bg-opacity-70 w-[80%] mx-auto">
 
-                        <div className='bg-gray-100 border-2 border-green-300 shadow-md rounded-lg p-8 flex flex-col items-center justify-center'>
+                        <div className='bg-gray-100 shadow-md rounded-lg p-8 flex flex-col items-center justify-center'>
 
                             <h2 className='font-sans font-medium'> Maximum sales of the quater is $ 200 k and</h2>
                             <h2 className='font-sans font-medium'> maximum sales of last quater was $ 300 k </h2>
@@ -46,12 +46,12 @@ const Eightth = () => {
                     <div className="border-2 border-gray-200 rounded-lg p-4 shadow-md">
                         <div className="flex items-center gap-2 mb-4">
                             <img src="/images/logo.png" alt="Logo" className="w-8 h-8 rounded-lg" />
-                            <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm">+ Dashboard</span>
+                            <span className="bg-green-500 shadow-md text-white px-3 py-1 rounded-full text-sm">+ Dashboard</span>
                         </div>
 
-                        <div className="border-2 border-green-300 rounded-lg p-4 shadow-md bg-green-300 w-[80%] mx-auto">
+                        <div className=" rounded-lg p-4 shadow-md bg-green-500 bg-opacity-70 w-[80%] mx-auto">
 
-                            <div className='bg-gray-100 border-2 border-green-300 shadow-md rounded-lg p-8 flex flex-col items-center justify-center'>
+                            <div className='bg-gray-100 shadow-md rounded-lg p-8 flex flex-col items-center justify-center'>
 
                                 <h2 className='font-sans font-medium'> Maximum sales of the quater is $ 200 k and</h2>
                                 <h2 className='font-sans font-medium'> maximum sales of last quater was $ 300 k </h2>
