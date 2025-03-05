@@ -17,7 +17,6 @@ const Faq = () => {
     // Ensure selectedFaq defaults to faqData[0] if id is missing or invalid
     const selectedFaq = id ? faqData.find((faq) => faq.id === id) : faqData[0];
 
-    // Ensure selectedQuestion defaults to sections[0] if id is missing or invalid
     const selectedQuestion = id ? sections.find((faq) => faq.id === id) : sections[0];
 
 
