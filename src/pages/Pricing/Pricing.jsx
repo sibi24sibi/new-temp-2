@@ -36,8 +36,8 @@ const PaymentModal = ({
             {selectedPlan.price
               ? formatPrice(selectedPlan.price)
               : isAnnual
-              ? `${formatPrice(selectedPlan.annualPrice)}/Dashboard`
-              : `${formatPrice(selectedPlan.monthlyPrice)}/Dashboard`}
+                ? `${formatPrice(selectedPlan.annualPrice)}/Dashboard`
+                : `${formatPrice(selectedPlan.monthlyPrice)}/Dashboard`}
             <ul className="plan-features">
               {selectedPlan.features.map((feature, idx) => (
                 <li key={idx}>{feature}</li>
@@ -472,23 +472,23 @@ const Pricing = () => {
 
   return (
     <div className="fixed h-[calc(100vh-72px)] bottom-0 overflow-y-auto w-full font-sans p-14 ">
-        <div className="pricing-header mb-8">
-          <div className="toggle-container">
-            <button
-              className={`toggle-button ${!isAnnual ? "active" : ""}`}
-              onClick={() => setIsAnnual(false)}
-              aria-label="Switch to monthly pricing"
-            >
-              Monthly
-            </button>
-            <button
-              className={`toggle-button ${isAnnual ? "active" : ""}`}
-              onClick={() => setIsAnnual(true)}
-            >
-              Annually
-            </button>
-          </div>
+      <div className="pricing-header mb-8">
+        <div className="toggle-container">
+          <button
+            className={`toggle-button ${!isAnnual ? "active" : ""}`}
+            onClick={() => setIsAnnual(false)}
+            aria-label="Switch to monthly pricing"
+          >
+            Monthly
+          </button>
+          <button
+            className={`toggle-button ${isAnnual ? "active" : ""}`}
+            onClick={() => setIsAnnual(true)}
+          >
+            Annually
+          </button>
         </div>
+      </div>
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-20">
 
         <div className="tabs">
@@ -540,8 +540,8 @@ const Pricing = () => {
                 {plan.price
                   ? formatPrice(plan.price)
                   : isAnnual
-                  ? `${formatPrice(plan.annualPrice)}/Dashboard`
-                  : `${formatPrice(plan.monthlyPrice)}/Dashboard`}
+                    ? `${formatPrice(plan.annualPrice)}/Dashboard`
+                    : `${formatPrice(plan.monthlyPrice)}/Dashboard`}
               </div>
             )}
             <ul className="plan-features">
@@ -550,14 +550,14 @@ const Pricing = () => {
               ))}
             </ul>
             {plan.price === "Custom" ? (
-              <button className="buy-button">Talk To Sales</button>
+              <button className="buy-button bg-[#223bc5]">Talk To Sales</button>
             ) : (
               <button
                 onClick={() => {
                   handleBuyClick(plan);
                   console.log(plan);
                 }}
-                className="buy-button"
+                className="buy-button bg-[#223bc5]"
               >
                 Buy Now
               </button>

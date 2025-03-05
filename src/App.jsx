@@ -25,6 +25,8 @@ import Features from './pages/Features/Features';
 import Smartcardai from './pages/Product/Smartcardai';
 import Whysmartcardai from './pages/WhySmartCardAi/Whysmartcardai';
 import AdvancedAnalytics from './pages/Docs/Components/AdvancedAnalytics';
+import Contact from './pages/Contact/contact';
+import Faq from './pages/Faq/Faq';
 
 const App = () => {
   return (
@@ -71,6 +73,9 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/training" element={<Training />} />
         <Route path="/orders" element={<Orders />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/faq/:id" element={<Faq />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

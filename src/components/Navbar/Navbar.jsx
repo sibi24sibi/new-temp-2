@@ -45,7 +45,8 @@ const Navbar = () => {
             <Link to="/consulting">Consulting</Link>
             <Link to="/features">Features</Link>
             <Link to="/pricing">Pricing</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/faq">FAQ</Link>
 
             {/* Products Dropdown */}
             <div className="relative" ref={dropdownRef}>
@@ -147,12 +148,13 @@ const Navbar = () => {
           >
             Pricing
           </Link>
+
           <Link
             to="/"
             className="text-gray-700 hover:text-gray-900 font-medium text-lg"
             onClick={closeMobileMenu}
           >
-            Contact
+            FAQ
           </Link>
 
           {/* Products Dropdown for Mobile */}

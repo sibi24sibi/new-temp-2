@@ -32,11 +32,11 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 px-12">
                     {/* Column 1 */}
                     <div className="flex flex-col gap-2 ">
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        <Link to="/contact" className="hover:text-gray-300 transition-colors">
                             Contact
                         </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
-                            Book a meeting
+                        <Link to="/features" className="hover:text-gray-300 transition-colors">
+                            Features
                         </Link>
                         <Link to="/pricing" className="hover:text-gray-300 transition-colors">
                             Pricing
@@ -44,8 +44,14 @@ const Footer = () => {
                         <Link to="/docs" className="hover:text-gray-300 transition-colors">
                             Docs
                         </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
-                            Experts
+                        <Link to="/faq" className="hover:text-gray-300 transition-colors">
+                            FAQ
+                        </Link>
+                        <Link to="/careers" className="hover:text-gray-300 transition-colors">
+                            careers
+                        </Link>
+                        <Link to="/smartcard-ai" className="hover:text-gray-300 transition-colors">
+                            products
                         </Link>
                     </div>
 
