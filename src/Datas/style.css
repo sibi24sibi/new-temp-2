@@ -1,0 +1,31 @@
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Same as space-y-10 in Tailwind */
+}
+
+.faq-text {
+  margin-bottom: 10px;
+}
+
+.faq-heading {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.faq-list {
+  padding-left: 24px;
+  margin-bottom: 40px;
+}
+
+.faq-list li {
+  margin-bottom: 15px;
+}
+
+.faq-subheading {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: black; /* Green color for subheadings */
+}

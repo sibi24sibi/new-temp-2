@@ -47,6 +47,7 @@ const Navbar = () => {
             <Link to="/pricing">Pricing</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/faq">FAQ</Link>
+            <Link to="/careers">Careers</Link>
 
             {/* Products Dropdown */}
             <div className="relative" ref={dropdownRef}>
