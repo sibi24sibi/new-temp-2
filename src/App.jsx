@@ -28,6 +28,7 @@ import AdvancedAnalytics from './pages/Docs/Components/AdvancedAnalytics';
 import Contact from './pages/Contact/Contact';
 import Faq from './pages/Faq/Faq';
 import Careers from './pages/carrers/Careers';
+import JobListing from './pages/carrers/CareersListing';
 
 const App = () => {
   return (
@@ -78,6 +79,7 @@ const App = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/faq/:id" element={<Faq />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/:jobId" element={<JobListing />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

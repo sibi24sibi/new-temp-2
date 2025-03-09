@@ -14,12 +14,14 @@ import StatsSection from './Components/FeaturesMarquee'
 import TestimonialCard from './Components/Feedback'
 import Footer from '@/components/Footer/Footer'
 import GetInTouch from './Components/GetInTouch'
+import { OtherCompany } from '../Company/OtherCompany'
 function Home() {
     return (
         <div className='home fixed h-[calc(100vh-72px)] bottom-0 overflow-y-auto w-full pt-16 md:pt-0'>
             <LandingPage />
             <CompanyMarquee />
             <Second />
+            <OtherCompany />.
             <TestimonialCard />
             <Third />
             <StatsSection />

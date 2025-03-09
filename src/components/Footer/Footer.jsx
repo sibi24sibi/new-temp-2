@@ -75,6 +75,9 @@ const Footer = () => {
                         <Link to="/" className="hover:text-gray-300 transition-colors">
                             Terms & Conditions
                         </Link>
+                        <Link to="/faq/9" className="hover:text-gray-300 transition-colors">
+                            ROI Calculator
+                        </Link>
                     </div>
 
                     {/* Column 3 */}

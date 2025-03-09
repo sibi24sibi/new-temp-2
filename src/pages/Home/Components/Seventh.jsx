@@ -7,7 +7,7 @@ import { Mic, Paperclip, SendHorizontal } from 'lucide-react';
 
 const Seventh = () => {
     return (
-        <div className="flex gap-8 p-6 flex-col md:flex-row font-sans h-max-content">
+        <div className="flex gap-10 p-6 flex-col md:flex-row font-sans h-max-content">
             {/* Left Section - Main Content */}
             {/* Left Section - Main Content */}
             <div className="w-full md:w-[50%] border-2 border-gray-300 rounded-lg h-max-content p-6 shadow-lg space-y-6">
@@ -61,7 +61,7 @@ const Seventh = () => {
 
 
 
-            <div className="w-full  md:flex md:flex-col md:justify-between md:min-h-0 border-2 border-gray-300 rounded-lg shadow-lg p-6 space-y-6">
+            <div className="w-full md:w-[50%]  md:flex md:flex-col md:justify-between md:min-h-0 border-2 border-gray-300 rounded-lg shadow-lg p-6 space-y-6">
                 {/* User Input Bubble */}
                 <DashboardWithUser data="Hey can you help me write a SQL query that displays 'Name is max' when the name is either max or Jack, and 'You have selected other user' for any other name from my table" />
 
