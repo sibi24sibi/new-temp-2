@@ -69,12 +69,7 @@ const Footer = () => {
                         {/* <Link to="/" className="hover:text-gray-300 transition-colors">
                             Data Analyst Support
                         </Link> */}
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
-                            Privacy Policy
-                        </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
-                            Terms & Conditions
-                        </Link>
+
                         <Link to="/faq/9" className="hover:text-gray-300 transition-colors">
                             ROI Calculator
                         </Link>
@@ -82,11 +77,11 @@ const Footer = () => {
 
                     {/* Column 3 */}
                     <div className="flex flex-col gap-2 ">
-                        <Link to="/login" className="hover:text-gray-300 transition-colors">
-                            Login
+                        <Link to="/privacy" className="hover:text-gray-300 transition-colors">
+                            Privacy Policy
                         </Link>
-                        <Link to="/signup" className="hover:text-gray-300 transition-colors">
-                            Signup
+                        <Link to="/terms" className="hover:text-gray-300 transition-colors">
+                            Terms & Conditions
                         </Link>
                         <Link to="/" className="hover:text-gray-300 transition-colors">
                             Download

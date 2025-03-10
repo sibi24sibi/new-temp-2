@@ -48,6 +48,7 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/careers">Careers</Link>
+            <Link to="/usecase">Use Cases</Link>
 
             {/* Products Dropdown */}
             <div className="relative" ref={dropdownRef}>
