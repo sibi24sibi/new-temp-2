@@ -63,7 +63,7 @@ const Footer = () => {
                         {/* <Link to="/" className="hover:text-gray-300 transition-colors">
                             Tutorials
                         </Link> */}
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        <Link to="/contact" className="hover:text-gray-300 transition-colors">
                             Partnerships
                         </Link>
                         {/* <Link to="/" className="hover:text-gray-300 transition-colors">
@@ -83,13 +83,13 @@ const Footer = () => {
                         <Link to="/terms" className="hover:text-gray-300 transition-colors">
                             Terms & Conditions
                         </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        <Link to="/smartcard-ai" className="hover:text-gray-300 transition-colors">
                             Download
                         </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        <Link to="/smartcard-ai" className="hover:text-gray-300 transition-colors">
                             Update
                         </Link>
-                        <Link to="/" className="hover:text-gray-300 transition-colors">
+                        <Link to="/smartcard-ai" className="hover:text-gray-300 transition-colors">
                             Develop BI Using AI
                         </Link>
                     </div>

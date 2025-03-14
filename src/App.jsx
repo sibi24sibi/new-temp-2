@@ -83,9 +83,10 @@ const App = () => {
         <Route path="/faq/:id" element={<Faq />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/:jobId" element={<JobListing />} />
-        <Route path="/usecase" element={<UseCases />} />
         <Route path="/privacy" element={<DataPrivacy />} />
         <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/usecase" element={<UseCases />} />
+        <Route path="/usecase/:id" element={<UseCases />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

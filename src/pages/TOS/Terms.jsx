@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TermsOfService = () => {
     return (
@@ -73,7 +74,7 @@ const TermsOfService = () => {
                     </li>
                     <li>
                         By using this Service, you consent to the collection and use of information as outlined in
-                        our <span className="text-blue-600 hover:underline cursor-pointer">Privacy Policy</span>.
+                        our <Link to='/privacy' className="text-blue-600 hover:underline cursor-pointer">Privacy Policy</Link>.
                     </li>
                     <li>
                         This information may be used to improve and deliver the Service and related offerings.
